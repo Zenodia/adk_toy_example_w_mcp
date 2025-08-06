@@ -1,0 +1,5 @@
+google-adk 
+litellm>=1.71.2
+sympy
+fastmcp
+colorama
