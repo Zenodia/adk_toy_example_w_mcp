@@ -53,7 +53,7 @@ async def check_prime():
             print(f"Tool: {tool}")
 
         result = await client.call_tool("check_prime", {"number": 3})
-        print(Fore.YELLOW + f"type(result) , {type(result.content)} | result: {result.content[0].text}", Fore.RESET)
+        #print(Fore.YELLOW + f"type(result) , {type(result.content)} | result: {result.content[0].text}", Fore.RESET)
         out=result.content[0].text
     return out
 
@@ -62,7 +62,7 @@ root_agent = Agent(
     model=LiteLlm(model="openai/meta/llama-3.1-405b-instruct", base_url=base_url, api_key=os.environ["NVIDIA_API_KEY"]),
     name="dice_agent",
     description=(
-        "hello world agent that can roll a dice of 8 sides and check prime"
+        "hello world agent that can roll a dice of 6 sides and check prime"
         " numbers."
     ),
     instruction="""
