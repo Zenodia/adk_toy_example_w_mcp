@@ -21,8 +21,12 @@ I am using 3.11.10
 ``` 
 pip install -r requirements.txt
 ``` 
+## Step_3 : create a .env file under simple_agent folder
+``` 
+NVIDIA_API_KEY="fill in your nvidia api key"
+``` 
 
-## Step_3 : run the app 
+## Step_4 : run the app 
 ``` 
 adk run simple_agent 
 ``` 
